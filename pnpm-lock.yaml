@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       manutopiknuxt-content-v3:
-        specifier: 3.0.0-alpha.8
-        version: 3.0.0-alpha.8(@libsql/client@0.14.0)(magicast@0.3.5)(pg@8.13.1)(rollup@4.30.0)
+        specifier: 3.0.0-alpha.8-1
+        version: 3.0.0-alpha.8-1(@libsql/client@0.14.0)(magicast@0.3.5)(pg@8.13.1)(rollup@4.30.0)
       minisearch:
         specifier: ^7.1.1
         version: 7.1.1
@@ -2255,8 +2255,8 @@ packages:
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
-  manutopiknuxt-content-v3@3.0.0-alpha.8:
-    resolution: {integrity: sha512-V0KgSE2sSMqu/zOvZhsVfu8rtHwgqJi6gmZYNTelGz5Vx6L/a0XVBTkbJoEbvb5lb7MMbzy6gJVjYX+i8QxliQ==}
+  manutopiknuxt-content-v3@3.0.0-alpha.8-1:
+    resolution: {integrity: sha512-8apV83AwnbuRSdY1f49ku25YvKA0YQG08u2rHlsb1+WFmNXHLAHa5f1OwgOP4WsJJEupt2FEoHSf30OHUPHgzw==}
     peerDependencies:
       '@libsql/client': '*'
       pg: '*'
@@ -6395,7 +6395,7 @@ snapshots:
       '@babel/types': 7.26.3
       source-map-js: 1.2.1
 
-  manutopiknuxt-content-v3@3.0.0-alpha.8(@libsql/client@0.14.0)(magicast@0.3.5)(pg@8.13.1)(rollup@4.30.0):
+  manutopiknuxt-content-v3@3.0.0-alpha.8-1(@libsql/client@0.14.0)(magicast@0.3.5)(pg@8.13.1)(rollup@4.30.0):
     dependencies:
       '@libsql/client': 0.14.0
       '@nuxtjs/mdc': 0.12.0(magicast@0.3.5)(rollup@4.30.0)
