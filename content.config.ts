@@ -1,4 +1,4 @@
-import { defineContentConfig, defineCollection } from '@nuxt/content'
+import { defineContentConfig, defineCollection } from 'manutopiknuxt-content-v3'
 
 export default defineContentConfig({
   collections: {

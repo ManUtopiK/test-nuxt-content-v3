@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@nuxt/content':
+      manutopiknuxt-content-v3:
         specifier: 3.0.0-alpha.8
         version: 3.0.0-alpha.8(@libsql/client@0.14.0)(magicast@0.3.5)(pg@8.13.1)(rollup@4.30.0)
       minisearch:
@@ -586,12 +586,6 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@nuxt/content@3.0.0-alpha.8':
-    resolution: {integrity: sha512-DLz6zSVfc1TWMmxq7fq5Q6bT+IzB/QknRXtaPyEGfPh9xzw5tomzTcPPF1wLZKkziMbY/Nl96cXtdaB7p5WnOA==}
-    peerDependencies:
-      '@libsql/client': '*'
-      pg: '*'
-
   '@nuxt/devalue@2.0.2':
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
 
@@ -629,8 +623,8 @@ packages:
     peerDependencies:
       vue: ^3.3.4
 
-  '@nuxtjs/mdc@0.11.1':
-    resolution: {integrity: sha512-N58KK1STT4M5WGfzXrW8qywWK70jIlDsv9XkgUR4px2kYJbzRc3hB0rgO34tWfR3xT+F93Lhuig9zWVqmTLb3Q==}
+  '@nuxtjs/mdc@0.12.0':
+    resolution: {integrity: sha512-xu9XIzHdpne6SrcafOwqRohS9s4vPqaQ8KtiF4hJHHO2QeHDmWSi6ZxgYkxo886B1RdNgNx6r0Cv0aIObSlIxg==}
 
   '@parcel/watcher-android-arm64@2.5.0':
     resolution: {integrity: sha512-qlX4eS28bUcQCdribHkg/herLe+0A9RyYC+mm2PXpncit8z5b3nSqGVzMNR3CmtAOgRutiZ02eIJJgP/b1iEFQ==}
@@ -939,8 +933,8 @@ packages:
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
 
-  '@sqlite.org/sqlite-wasm@3.47.1-build1':
-    resolution: {integrity: sha512-3qnVGab3sjJ8ov0ce1rQGZrMkglYEQ/q5fnq1s1BpRWFMYsiJVaLD1zKepcI9E9r3qx7929+2G27Hfsasvrm6Q==}
+  '@sqlite.org/sqlite-wasm@3.47.2-build1':
+    resolution: {integrity: sha512-jDRWfcPYmOsJGN1GplXbw5ZlB+PSzihw1EDElzqkenSI+yK7QYOfwhzYnBR9H8Bv5MHi6EUMb4t3CnLfXCSA8A==}
     hasBin: true
 
   '@trysound/sax@0.2.0':
@@ -2260,6 +2254,12 @@ packages:
 
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
+
+  manutopiknuxt-content-v3@3.0.0-alpha.8:
+    resolution: {integrity: sha512-V0KgSE2sSMqu/zOvZhsVfu8rtHwgqJi6gmZYNTelGz5Vx6L/a0XVBTkbJoEbvb5lb7MMbzy6gJVjYX+i8QxliQ==}
+    peerDependencies:
+      '@libsql/client': '*'
+      pg: '*'
 
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
@@ -4410,60 +4410,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.18.0
 
-  '@nuxt/content@3.0.0-alpha.8(@libsql/client@0.14.0)(magicast@0.3.5)(pg@8.13.1)(rollup@4.30.0)':
-    dependencies:
-      '@libsql/client': 0.14.0
-      '@nuxt/kit': 3.15.1(magicast@0.3.5)(rollup@4.30.0)
-      '@nuxtjs/mdc': 0.11.1(magicast@0.3.5)(rollup@4.30.0)
-      '@sqlite.org/sqlite-wasm': 3.47.1-build1
-      better-sqlite3: 11.7.2
-      c12: 2.0.1(magicast@0.3.5)
-      chokidar: 4.0.3
-      consola: 3.3.3
-      defu: 6.1.4
-      destr: 2.0.3
-      fast-glob: 3.3.3
-      git-url-parse: 16.0.0
-      jiti: 2.4.2
-      knitwork: 1.2.0
-      listhen: 1.9.0
-      mdast-util-to-hast: 13.2.0
-      mdast-util-to-string: 4.0.0
-      micromark: 4.0.1
-      micromark-util-character: 2.1.1
-      micromark-util-chunked: 2.0.1
-      micromark-util-resolve-all: 2.0.1
-      micromark-util-sanitize-uri: 2.0.1
-      micromatch: 4.0.8
-      minimatch: 10.0.1
-      nuxt-component-meta: 0.9.0(magicast@0.3.5)(rollup@4.30.0)
-      ohash: 1.1.4
-      parse-git-config: 3.0.0
-      pathe: 1.1.2
-      pg: 8.13.1
-      pkg-types: 1.3.0
-      remark-mdc: 3.5.1
-      scule: 1.3.0
-      shiki: 1.26.1
-      slugify: 1.6.6
-      socket.io-client: 4.8.1
-      tar: 7.4.3
-      typescript: 5.6.3
-      ufo: 1.5.4
-      unified: 11.0.5
-      unist-util-stringify-position: 4.0.0
-      unist-util-visit: 5.0.0
-      ws: 8.18.0
-      zod: 3.24.1
-      zod-to-json-schema: 3.24.1(zod@3.24.1)
-      zod-to-ts: 1.2.0(typescript@5.6.3)(zod@3.24.1)
-    transitivePeerDependencies:
-      - bufferutil
-      - magicast
-      - rollup
-      - supports-color
-      - utf-8-validate
-
   '@nuxt/devalue@2.0.2': {}
 
   '@nuxt/devtools-kit@1.7.0(magicast@0.3.5)(rollup@4.30.0)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))':
@@ -4650,7 +4596,7 @@ snapshots:
       - vue-tsc
       - yaml
 
-  '@nuxtjs/mdc@0.11.1(magicast@0.3.5)(rollup@4.30.0)':
+  '@nuxtjs/mdc@0.12.0(magicast@0.3.5)(rollup@4.30.0)':
     dependencies:
       '@nuxt/kit': 3.15.1(magicast@0.3.5)(rollup@4.30.0)
       '@shikijs/transformers': 1.26.1
@@ -4658,7 +4604,7 @@ snapshots:
       '@types/mdast': 4.0.4
       '@vue/compiler-core': 3.5.13
       consola: 3.3.3
-      debug: 4.3.7
+      debug: 4.4.0(supports-color@9.4.0)
       defu: 6.1.4
       destr: 2.0.3
       detab: 3.0.2
@@ -4958,7 +4904,7 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.2': {}
 
-  '@sqlite.org/sqlite-wasm@3.47.1-build1': {}
+  '@sqlite.org/sqlite-wasm@3.47.2-build1': {}
 
   '@trysound/sax@0.2.0': {}
 
@@ -6448,6 +6394,60 @@ snapshots:
       '@babel/parser': 7.26.3
       '@babel/types': 7.26.3
       source-map-js: 1.2.1
+
+  manutopiknuxt-content-v3@3.0.0-alpha.8(@libsql/client@0.14.0)(magicast@0.3.5)(pg@8.13.1)(rollup@4.30.0):
+    dependencies:
+      '@libsql/client': 0.14.0
+      '@nuxtjs/mdc': 0.12.0(magicast@0.3.5)(rollup@4.30.0)
+      '@shikijs/langs': 1.26.1
+      '@sqlite.org/sqlite-wasm': 3.47.2-build1
+      better-sqlite3: 11.7.2
+      c12: 2.0.1(magicast@0.3.5)
+      chokidar: 4.0.3
+      consola: 3.3.3
+      defu: 6.1.4
+      destr: 2.0.3
+      fast-glob: 3.3.3
+      git-url-parse: 16.0.0
+      jiti: 2.4.2
+      knitwork: 1.2.0
+      listhen: 1.9.0
+      mdast-util-to-hast: 13.2.0
+      mdast-util-to-string: 4.0.0
+      micromark: 4.0.1
+      micromark-util-character: 2.1.1
+      micromark-util-chunked: 2.0.1
+      micromark-util-resolve-all: 2.0.1
+      micromark-util-sanitize-uri: 2.0.1
+      micromatch: 4.0.8
+      minimatch: 10.0.1
+      nuxt-component-meta: 0.9.0(magicast@0.3.5)(rollup@4.30.0)
+      ohash: 1.1.4
+      parse-git-config: 3.0.0
+      pathe: 2.0.0
+      pg: 8.13.1
+      pkg-types: 1.3.0
+      remark-mdc: 3.5.1
+      scule: 1.3.0
+      shiki: 1.26.1
+      slugify: 1.6.6
+      socket.io-client: 4.8.1
+      tar: 7.4.3
+      typescript: 5.6.3
+      ufo: 1.5.4
+      unified: 11.0.5
+      unist-util-stringify-position: 4.0.0
+      unist-util-visit: 5.0.0
+      ws: 8.18.0
+      zod: 3.24.1
+      zod-to-json-schema: 3.24.1(zod@3.24.1)
+      zod-to-ts: 1.2.0(typescript@5.6.3)(zod@3.24.1)
+    transitivePeerDependencies:
+      - bufferutil
+      - magicast
+      - rollup
+      - supports-color
+      - utf-8-validate
 
   markdown-table@3.0.4: {}
 
