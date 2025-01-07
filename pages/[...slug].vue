@@ -14,13 +14,12 @@ const { data } = await useAsyncData('navigation', () => {
   // .order('date', 'DESC')
 })
 
-const { data: posts } = await useAsyncData('search', () => queryCollectionSearchSections('content'))
-console.log(posts.value)
+// const { data: posts } = await useAsyncData('search', () => queryCollectionSearchSections('content'))
+// console.log(posts.value)
 </script>
 
 <template>
   {{ data }}
-  <Search />
   <ContentRenderer v-if="page" :value="page" />
   <div v-else>Page not found</div>
 </template>

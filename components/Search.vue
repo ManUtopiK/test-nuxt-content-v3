@@ -16,12 +16,17 @@ const miniSearch = new MiniSearch({
 // Add data to the MiniSearch instance
 miniSearch.addAll(toValue(data.value))
 const result = computed(() => miniSearch.search(toValue(query)))
+
+function onLog() {
+  console.log(data)
+}
 </script>
 
 <template>
   <div class="p-4">
     <div>
       <input v-model="query" placeholder="Search..." />
+      <button @click="onLog()">Log data</button>
       <ul>
         <li v-for="link of result" :key="link.id" class="mt-2">
           <NuxtLink :to="link.id">{{ link.title }}</NuxtLink>
