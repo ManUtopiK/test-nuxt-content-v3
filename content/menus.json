@@ -1,0 +1,34 @@
+{
+  "header": [
+    {
+      "title": "Qui sommes nous",
+      "url": "/qui-sommes-nous"
+    },
+    {
+      "title": "Votre projet",
+      "url": "/votre-projet"
+    },
+    {
+      "title": "Centre de Resources",
+      "url": "/centre-de-resources"
+    },
+    {
+      "title": "Nous soutenir",
+      "url": "/nous-soutenir"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact"
+    },
+     {
+      "title": "Aide",
+      "url": "/aide"
+    }
+  ],
+  "footer": [
+    {
+      "title": "Mentions légales",
+      "url": "/mentions-legales"
+    }
+  ]
+}
