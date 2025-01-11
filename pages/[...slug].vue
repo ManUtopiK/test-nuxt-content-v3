@@ -19,7 +19,8 @@ const { data } = await useAsyncData('navigation', () => {
 </script>
 
 <template>
-  {{ data }}
+  <pre>{{ page }}</pre>
+  <!-- <pre>{{ data }}</pre> -->
   <ContentRenderer v-if="page" :value="page" />
   <div v-else>Page not found</div>
 </template>

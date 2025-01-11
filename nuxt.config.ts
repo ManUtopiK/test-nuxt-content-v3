@@ -9,5 +9,12 @@ export default defineNuxtConfig({
     }
   },
 
+  hooks: {
+    'content:file:beforeParse'(ctx: any) {
+      console.log('iii', ctx)
+      // ...
+    }
+  },
+
   devtools: { enabled: true }
 })

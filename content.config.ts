@@ -1,10 +1,13 @@
-import { defineContentConfig, defineCollection } from 'manutopiknuxt-content-v3'
+import { defineContentConfig, defineCollection, z } from 'manutopiknuxt-content-v3'
 
 export default defineContentConfig({
   collections: {
     content: defineCollection({
+      source: '**',
       type: 'page',
-      source: '**/*.md'
+      schema: z.object({
+        rawbody: z.string()
+      })
     })
   }
 })

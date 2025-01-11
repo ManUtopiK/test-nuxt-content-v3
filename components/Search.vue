@@ -20,6 +20,14 @@ const result = computed(() => miniSearch.search(toValue(query)))
 function onLog() {
   console.log(data)
 }
+async function onLogPage() {
+  const route = useRoute()
+  console.log(route.path)
+  const collections = await queryCollectionSearchSections('content')
+  console.log(collections)
+  const page = await queryCollection('content').path(route.path).first()
+  console.log(page)
+}
 </script>
 
 <template>
@@ -27,6 +35,7 @@ function onLog() {
     <div>
       <input v-model="query" placeholder="Search..." />
       <button @click="onLog()">Log data</button>
+      <button @click="onLogPage()">Log page</button>
       <ul>
         <li v-for="link of result" :key="link.id" class="mt-2">
           <NuxtLink :to="link.id">{{ link.title }}</NuxtLink>
