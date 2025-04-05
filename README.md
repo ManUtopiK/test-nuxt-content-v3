@@ -77,3 +77,9 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ![test](https://github.com/user-attachments/assets/e76f9f40-aafe-429f-baeb-adb72cc84c41)
 
 ![test2](https://raw.githubusercontent.com/ManUtopiK/test-nuxt-content-v3/refs/heads/main/.github/test.svg)
+
+<div align="center">
+	<a href="https://github.com/th-ch/youtube-music/releases/latest">
+		<img src="https://raw.githubusercontent.com/ManUtopiK/test-nuxt-content-v3/refs/heads/main/.github/test.svg" width="400" height="100" alt="YouTube Music SVG">
+	</a>
+</div>
